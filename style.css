@@ -1,0 +1,249 @@
+/* -------------------------------colorText----------------------------- */
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #02ff0f;
+    --color-2: #ae00ff;
+    --color-3: #00eee2;
+  }
+  
+  .title-word-2 {
+    --color-1: #00ff00;
+    --color-2: rgb(255, 0, 242);
+    --color-3: #00fff2;
+  }
+  .title-word-3{
+    --color-1: #cc00ff;
+    --color-2: rgb(135, 0, 189);
+    --color-3: #57008a;
+  }
+  .title-word-4{
+    --color-1: #ff9900;
+    --color-2: rgb(255, 196, 0);
+    --color-3: #ffbb00;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 100vh
+  }
+  
+  .title {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+  }
+
+/* -------------------------------colorText----------------------------- */
+
+header{
+    display: block;
+    grid-template-columns: auto auto auto;
+    box-shadow: 0 0 50px rgb(188, 188, 188);
+    position: sticky;
+    top: 0;
+}
+.header{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    background-color: white;
+    font-size: 200%;
+    padding: 1% 0;
+    font-family: 'Exo 2', sans-serif;
+}
+.container-headerL{
+    display: block;
+    grid-column: 1;
+    text-align: center;
+}
+.container-headerC{
+    grid-column: 2;
+    text-align: center;
+}
+.container-header-center a:hover {
+    text-decoration: underline;
+}
+.container-headerR{
+    grid-column: 3;
+    text-align: center;
+}
+body{
+    background-color: rgb(231, 231, 231);
+    opacity: 1;
+    background-image: radial-gradient(#75d3ff 1.1500000000000001px, rgb(231, 231, 231) 1.1500000000000001px);
+    background-size: 23px 23px;
+}
+.profile{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    margin: 5% auto;
+    align-items: center;
+}
+.profile-name {
+    grid-column: 1;
+    text-align: center;
+    width: 80%;
+    color: rgb(70, 0, 92);
+    font-size: 300%;
+    font-family: 'Exo 2', sans-serif;
+  }
+#Profile-picture {
+    grid-column: 2;
+    margin: 0 auto;
+}
+#profile-pic{
+  width: 500px;
+  height: 650px;
+  margin-right: auto;
+}
+#Description{
+  color: rgb(70, 0, 92);
+  grid-column: 1;
+  font-size: 70%;
+  margin: 0 auto;
+}
+.assignment-head{
+  display: block;
+  color: rgb(70, 0, 92);
+  text-align: center;
+  font-size: 200%;
+  margin-top: 7%;
+  font-family: 'Exo 2', sans-serif;
+}
+.Aboutme-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  margin-left: 20%;
+  text-align: left;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 150%;
+  color: rgb(70, 0, 92);
+}
+hr{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+#about-tag{
+  display: block;
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Exo 2', sans-serif;
+}
+.skill-container{
+  display: grid;
+  margin-left: 47%;
+  text-align: left;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 150%;
+  color: rgb(70, 0, 92);
+}
+.assignment{
+  display: flex;
+  border: 1px solid rgb(95, 94, 94);
+  justify-content: space-around;
+  width: 1000px;
+  margin: 5px auto;
+  height: 100px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  margin-top: 5%;
+  transition: width 1s;
+}
+#assignment-button {
+  font-family: 'Exo 2', sans-serif;
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: rgb(70, 0, 92);
+}
+.social {
+  margin-top: 10%;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Exo 2', sans-serif;
+}
+@media only screen and (max-width: 768px){
+  .container-headerC{
+    grid-row: 1;
+    grid-column: 1/ span 3;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  .container-headerL{
+    visibility: hidden;
+  }
+  .container-headerR{
+    visibility: hidden;
+  }
+  .profile-name {
+    font-size: 200%;
+    grid-column: 1/ span2;
+    margin: 10px auto;
+  }
+  .assignment-head{
+    font-size: 200%;
+    grid-column: 1/ span2;
+    margin: 10px auto;
+  }
+  .assignment{
+    width: 70vw;
+  }
+  .Gamecontent{
+    font-size: 50%;
+  }
+  .project-storeimage{
+    grid-column: 1/ span 2;
+    width: 1vw;
+    margin-top: 10%;
+  }
+}
+#projectTag {
+  display: flex;
+  font-size: 500%;
+  font-family: 'Exo 2', sans-serif;
+  color: rgb(70, 0, 92);
+  justify-content: center;
+  margin-top: 2%;
+}
+.project-storeimage{
+  display: flex;
+  justify-content: center;
+}
+#GameIntro{
+  display: block;
+  color: rgb(70, 0, 92);
+  text-align: center;
+  font-size: 200%;
+  margin-top: 7%;
+  font-family: 'Exo 2', sans-serif;
+}
+#contentingame{
+  display: grid;
+  margin-left: 35%;
+  text-align: left;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 150%;
+  color: rgb(70, 0, 92);
+}
